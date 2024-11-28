@@ -1,0 +1,26 @@
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin: 150px 0px 150px 0px;
+}
+
+.marquee-inner {
+  display: inline-block;
+  animation: scrolling 160s linear infinite; 
+}
+
+@keyframes scrolling {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); 
+  }
+}
+
+.marquee-inner img {
+  height: 700px; 
+  margin: 0 10px; 
+  border-radius: 10px;
+}
